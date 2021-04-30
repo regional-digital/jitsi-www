@@ -1,0 +1,154 @@
+<style>
+     .welcome .header {
+        background: unset;
+        height: unset;
+        padding-bottom:50px;
+     }
+     ::-webkit-scrollbar {
+        display: none;
+     }
+     .welcome .welcome-watermark .watermark.leftwatermark {
+        height:150px;
+        width:150px;
+        top:0px;
+     }
+     .leftwatermark {
+        top: 10px;
+        height:150px;
+        width:150px;
+     }  
+      .welcome .header .header-text-description {
+         white-space: pre-line;
+      }
+      .welcome .welcome-page-button {
+        background: #006fc1;
+        border-radius:5px;
+      }
+      .welcome .header #enter_room {
+        width:unset;
+        margin: 30px 0px;
+      }
+     .welcome .header #enter_room .enter-room-input-container .enter-room-input:focus {
+        outline: auto 2px #006fc1;
+     }
+     .welcome .welcome-page-settings {
+       background: unset;
+       top: 30px;
+     }
+     .welcome .welcome-page-settings 
+     .jitsi-icon svg {
+        fill: #006fc1;
+     }
+     .meetings-list .meetings-list-empty {
+        text-align: left;
+	align-items: unset;
+     }
+     .meetings-list .delete-meeting>svg {
+        fill: #006fc1;
+     }
+     .meetings-list::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.8);
+     }
+     .meetings-list::-webkit-scrollbar {
+        display: unset;
+        width: 4px;
+     }
+     .welcome .header .header-container {
+        text-align: justify;
+        display: block;
+        margin: 150px 30px 0 30px;
+        max-width: 570px;
+     }
+     @media (max-width: 500px) {
+     .welcome .header .header-container
+        margin: 150px 30px 0 30px;
+     }
+     .welcome .header .header-text-title {
+        color: #000;
+        font-size:45px;
+        font-weight: 800;
+        margin-bottom: 20px;
+	text-align: unset;
+    }
+    .welcome .header .header-text-subtitle {
+        font-size:16;
+        color: #000;
+        font-weight: 500;
+        line-height:unset;
+	text-align: left;
+        white-space: pre-line;
+    }
+    .welcome .welcome-card {
+        width:555px;
+    }
+    .welcome .welcome-card-row {
+        justify-content: unset;
+     }
+    .welcome .welcome-card--blue {
+        background: #006fc1;
+        padding: 0px;
+    }
+    .welcome .welcome-card--dark {
+        padding: 15px;
+    }
+    .welcome .welcome-cards-container {
+        padding-top: 0px;
+    }
+    .welcome .tab-container .tab-content {
+        display: none;
+    }
+    .meetings-list .meetings-list-empty .description {
+        color: #fff;
+        text-align: left;
+        max-width: unset;
+    }
+    .welcome {
+        overflow: hidden;
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)),url(../images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .welcome-page-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 10px;
+        width: 100%
+    }
+    .welcome-page-content .welcome-footer {
+        position: sticky;
+        bottom: 0;
+        background: unset;
+        display: flex;
+        width: 100%;
+        z-index: 1
+    }
+    .welcome-page-content .welcome-footer-content a {
+        color: #000 !important;
+        text-decoration: underline
+    }
+    .welcome-page-content .welcome-footer-content {
+        color: #000 !important;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 2
+    }
+    .welcome-page-content .welcome-footer-about {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        font-size: 14px;
+        line-height: 20px;
+        justify-content: center;
+    }
+    .welcome-page-content .welcome-footer-about:last-child {
+        margin-left: 30px;
+    }
+    .embed-meeting-trigger {
+        display: none;
+    }
+</style>
