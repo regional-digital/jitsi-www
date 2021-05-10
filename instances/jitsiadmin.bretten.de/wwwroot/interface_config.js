@@ -199,15 +199,16 @@ var interfaceConfig = {
      * - it's impossible to control the placement of buttons
      * - 'desktop' controls the "Share your screen" button
      *
-     * Removed: 'recording', 'livestreaming', 'videobackgroundblur'
+     * Removed: 'recording', 'livestreaming', 'etherpad'
      */
     TOOLBAR_BUTTONS: [
-        'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
-        'fodeviceselection', 'hangup', 'profile', 'chat',
-        'etherpad', 'sharedvideo', 'settings', 'raisehand',
+        'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
+        'fodeviceselection', 'hangup', 'profile', 'chat', /*'recording',*/
+        /*'livestreaming', 'etherpad', */'sharedvideo', 'shareaudio', 'settings', 'raisehand',
         'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
-        'tileview', 'download', 'help', 'mute-everyone', 'security'
+        'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
     ],
+
 
     TOOLBAR_TIMEOUT: 4000,
 
