@@ -203,7 +203,7 @@ var interfaceConfig = {
      * Removed: 'recording', 'livestreaming', 'etherpad'
      */
     TOOLBAR_BUTTONS: [
-        'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
+        'microphone', 'camera', 'closedcaptions', 'desktop', /*'embedmeeting',*/ 'fullscreen',
         'fodeviceselection', 'hangup', 'profile', 'chat', /*'recording',*/
         /*'livestreaming', 'etherpad', */'sharedvideo', 'shareaudio', 'settings', 'raisehand',
         'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
