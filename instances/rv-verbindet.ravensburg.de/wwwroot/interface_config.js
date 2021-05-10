@@ -288,6 +288,6 @@ var interfaceConfig = {
 document.addEventListener('DOMContentLoaded', function(){
         document.querySelector(".watermark").style.maxWidth = "400px";
         document.querySelector(".watermark").style.maxHeight = "200px";
-        $("span.header-text-subtitle").after("<br /><br /><span class=\"header-text-subtitle\"><a style=\"color:#000\" href=\"https://www.ravensburg.de/rv/gesellschaft-soziales/rv-verbindet.php\" target=\"_blank\"><b>So funktioniert\'s</b></a></span>");
+        $("span.header-text-subtitle").after("<br /><br /><span class=\"header-text-subtitle\"><a style=\"color:#006fc1\" href=\"https://www.ravensburg.de/rv/gesellschaft-soziales/rv-verbindet.php\" target=\"_blank\"><b>&rarr; So funktioniert\'s</b></a><br /><br /><i>Konferenzname eingeben und los geht's.</i></span>");
 }, false);
 
