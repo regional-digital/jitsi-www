@@ -1,0 +1,1 @@
+../../jitsi-meet/static/close.js

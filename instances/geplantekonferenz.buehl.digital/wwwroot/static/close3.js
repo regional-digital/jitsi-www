@@ -1,0 +1,1 @@
+../src/static/close3.js
