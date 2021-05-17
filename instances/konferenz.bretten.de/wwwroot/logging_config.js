@@ -1,1 +1,1 @@
-../jitsi-meet/logging_config.js
+src/logging_config.js

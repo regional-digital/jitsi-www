@@ -1,1 +1,1 @@
-../../jitsi-meet/static/close3.js
+../src/static/close3.js

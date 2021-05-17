@@ -1,1 +1,1 @@
-../jitsi-meet/robots.txt
+src/robots.txt

@@ -1,1 +1,1 @@
-../jitsi-meet/pwa-worker.js
+src/pwa-worker.js
