@@ -289,3 +289,7 @@ var interfaceConfig = {
 };
 
 /* eslint-enable no-unused-vars, no-var, max-len */
+document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector(".watermark").style.maxWidth = "480px";
+    document.querySelector(".watermark").style.maxHeight = "140px";
+}, false);
