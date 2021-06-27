@@ -1,6 +1,13 @@
 /* eslint-disable no-unused-vars, no-var, max-len */
 /* eslint sort-keys: ["error", "asc", {"caseSensitive": false}] */
 
+/**
+ * !!!IMPORTANT!!!
+ *
+ * This file is considered deprecated. All options will eventually be moved to
+ * config.js, and no new options should be added here.
+ */
+
 var interfaceConfig = {
     APP_NAME: 'Palim! Palim!',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
@@ -167,6 +174,13 @@ var interfaceConfig = {
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
+
+    /**
+     * Specify which sharing features should be displayed. If the value is not set
+     * all sharing features will be shown. You can set [] to disable all.
+     */
+    // SHARING_FEATURES: ['email', 'url', 'dial-in', 'embed'],
+
     SHOW_BRAND_WATERMARK: false,
 
     /**
@@ -263,3 +277,7 @@ var interfaceConfig = {
 };
 
 /* eslint-enable no-unused-vars, no-var, max-len */
+document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector(".watermark").style.maxWidth = "480px";
+    document.querySelector(".watermark").style.maxHeight = "140px";
+}, false);
