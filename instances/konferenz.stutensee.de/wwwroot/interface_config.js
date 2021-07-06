@@ -1,7 +1,14 @@
 /* eslint-disable no-unused-vars, no-var, max-len */
 /* eslint sort-keys: ["error", "asc", {"caseSensitive": false}] */
 
-var interfaceConfig = {
+/**
+ * !!!IMPORTANT!!!
+ *
+ * This file is considered deprecated. All options will eventually be moved to
+ * config.js, and no new options should be added here.
+ */
+
+ var interfaceConfig = {
     APP_NAME: 'Milchl@dle 4.0',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
@@ -84,12 +91,12 @@ var interfaceConfig = {
      * Whether or not the blurred video background for large video should be
      * displayed on browsers that can support it.
      */
-    DISABLE_VIDEO_BACKGROUND: true,
+     DISABLE_VIDEO_BACKGROUND: true,
 
-    DISPLAY_WELCOME_PAGE_CONTENT: true,
-    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
     DISPLAY_WELCOME_FOOTER: false,
     DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
+    DISPLAY_WELCOME_PAGE_CONTENT: true,
+    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
 
     ENABLE_DIAL_OUT: false,
 
@@ -147,6 +154,7 @@ var interfaceConfig = {
      * Specify URL for downloading ios mobile app.
      */
     MOBILE_DOWNLOAD_LINK_IOS: 'https://itunes.apple.com/us/app/jitsi-meet/id1165103905',
+
     NATIVE_APP_NAME: 'Milchl@dle 4.0',
 
     // Names of browsers which should show a warning stating the current browser
@@ -156,7 +164,7 @@ var interfaceConfig = {
     OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron', 'safari' ],
 
     POLICY_LOGO: null,
-    PROVIDER_NAME: 'Stadt Bühl',
+    PROVIDER_NAME: 'Stadt Stutensee',
 
     /**
      * If true, will display recent list
@@ -167,6 +175,13 @@ var interfaceConfig = {
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
+
+    /**
+     * Specify which sharing features should be displayed. If the value is not set
+     * all sharing features will be shown. You can set [] to disable all.
+     */
+    // SHARING_FEATURES: ['email', 'url', 'dial-in', 'embed'],
+
     SHOW_BRAND_WATERMARK: false,
 
     /**
@@ -190,26 +205,16 @@ var interfaceConfig = {
     TOOLBAR_ALWAYS_VISIBLE: false,
 
     /**
-     * The name of the toolbar buttons to display in the toolbar, including the
-     * "More actions" menu. If present, the button will display. Exceptions are
-     * "livestreaming" and "recording" which also require being a moderator and
-     * some values in config.js to be enabled. Also, the "profile" button will
-     * not display for users with a JWT.
-     * Notes:
-     * - it's impossible to choose which buttons go in the "More actions" menu
-     * - it's impossible to control the placement of buttons
-     * - 'desktop' controls the "Share your screen" button
-     *
-     * Removed: 'recording', 'livestreaming', 'etherpad'
+     * DEPRECATED!
+     * This config was moved to config.js as `toolbarButtons`.
      */
-    TOOLBAR_BUTTONS: [
-        'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
-        'fodeviceselection', 'hangup', 'profile', 'chat', /*'recording',*/
-        /*'livestreaming', 'etherpad', */'sharedvideo', 'shareaudio', 'settings', 'raisehand',
-        'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
-        'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
-    ],
-
+    // TOOLBAR_BUTTONS: [
+    //     'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
+    //     'fodeviceselection', 'hangup', 'profile', 'chat', 'recording',
+    //     'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
+    //     'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
+    //     'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
+    // ],
 
     TOOLBAR_TIMEOUT: 4000,
 
