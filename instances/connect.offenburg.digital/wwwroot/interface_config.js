@@ -1,7 +1,14 @@
 /* eslint-disable no-unused-vars, no-var, max-len */
 /* eslint sort-keys: ["error", "asc", {"caseSensitive": false}] */
 
-var interfaceConfig = {
+/**
+ * !!!IMPORTANT!!!
+ *
+ * This file is considered deprecated. All options will eventually be moved to
+ * config.js, and no new options should be added here.
+ */
+
+ var interfaceConfig = {
     APP_NAME: 'Connect',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
@@ -86,10 +93,10 @@ var interfaceConfig = {
      */
     DISABLE_VIDEO_BACKGROUND: true,
 
-    DISPLAY_WELCOME_PAGE_CONTENT: true,
-    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
     DISPLAY_WELCOME_FOOTER: false,
     DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
+    DISPLAY_WELCOME_PAGE_CONTENT: true,
+    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
 
     ENABLE_DIAL_OUT: false,
 
@@ -167,6 +174,13 @@ var interfaceConfig = {
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
+
+    /**
+     * Specify which sharing features should be displayed. If the value is not set
+     * all sharing features will be shown. You can set [] to disable all.
+     */
+    // SHARING_FEATURES: ['email', 'url', 'dial-in', 'embed'],
+
     SHOW_BRAND_WATERMARK: false,
 
     /**
@@ -190,17 +204,8 @@ var interfaceConfig = {
     TOOLBAR_ALWAYS_VISIBLE: false,
 
     /**
-     * The name of the toolbar buttons to display in the toolbar, including the
-     * "More actions" menu. If present, the button will display. Exceptions are
-     * "livestreaming" and "recording" which also require being a moderator and
-     * some values in config.js to be enabled. Also, the "profile" button will
-     * not display for users with a JWT.
-     * Notes:
-     * - it's impossible to choose which buttons go in the "More actions" menu
-     * - it's impossible to control the placement of buttons
-     * - 'desktop' controls the "Share your screen" button
-     *
-     * Removed: 'recording', 'livestreaming', 'etherpad'
+     * DEPRECATED!
+     * This config was moved to config.js as `toolbarButtons`.
      */
     TOOLBAR_BUTTONS: [
         'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
