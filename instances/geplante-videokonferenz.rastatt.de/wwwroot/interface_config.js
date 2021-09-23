@@ -154,6 +154,7 @@ var interfaceConfig = {
      * Specify URL for downloading ios mobile app.
      */
     MOBILE_DOWNLOAD_LINK_IOS: 'https://itunes.apple.com/us/app/jitsi-meet/id1165103905',
+
     NATIVE_APP_NAME: 'Rastatt schnatzt!',
 
     // Names of browsers which should show a warning stating the current browser
@@ -207,13 +208,7 @@ var interfaceConfig = {
      * DEPRECATED!
      * This config was moved to config.js as `toolbarButtons`.
      */
-    // TOOLBAR_BUTTONS: [
-    //     'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
-    //     'fodeviceselection', 'hangup', 'profile', 'chat', 'recording',
-    //     'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
-    //     'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
-    //     'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
-    // ],
+    // TOOLBAR_BUTTONS: [],
 
     TOOLBAR_TIMEOUT: 4000,
 
@@ -289,7 +284,9 @@ var interfaceConfig = {
 };
 
 /* eslint-enable no-unused-vars, no-var, max-len */
+
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector(".watermark").style.maxWidth = "480px";
     document.querySelector(".watermark").style.maxHeight = "140px";
 }, false);
+

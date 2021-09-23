@@ -1,6 +1,13 @@
 /* eslint-disable no-unused-vars, no-var, max-len */
 /* eslint sort-keys: ["error", "asc", {"caseSensitive": false}] */
 
+/**
+ * !!!IMPORTANT!!!
+ *
+ * This file is considered deprecated. All options will eventually be moved to
+ * config.js, and no new options should be added here.
+ */
+
 var interfaceConfig = {
     APP_NAME: '1-2-3 re@di',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
@@ -84,12 +91,12 @@ var interfaceConfig = {
      * Whether or not the blurred video background for large video should be
      * displayed on browsers that can support it.
      */
-    DISABLE_VIDEO_BACKGROUND: true,
+     DISABLE_VIDEO_BACKGROUND: true,
 
+    DISPLAY_WELCOME_FOOTER: false,
+    DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
     DISPLAY_WELCOME_PAGE_CONTENT: true,
     DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
-    DISPLAY_WELCOME_FOOTER: false,
-    DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: true,
 
     ENABLE_DIAL_OUT: false,
 
@@ -147,6 +154,7 @@ var interfaceConfig = {
      * Specify URL for downloading ios mobile app.
      */
     MOBILE_DOWNLOAD_LINK_IOS: 'https://itunes.apple.com/us/app/jitsi-meet/id1165103905',
+
     NATIVE_APP_NAME: '1-2-3 re@di',
 
     // Names of browsers which should show a warning stating the current browser
@@ -167,6 +175,13 @@ var interfaceConfig = {
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
+
+    /**
+     * Specify which sharing features should be displayed. If the value is not set
+     * all sharing features will be shown. You can set [] to disable all.
+     */
+    // SHARING_FEATURES: ['email', 'url', 'dial-in', 'embed'],
+
     SHOW_BRAND_WATERMARK: false,
 
     /**
@@ -188,6 +203,12 @@ var interfaceConfig = {
     SUPPORT_URL: 'https://www.buehl.de/digitalisierung/palim-palim',
 
     TOOLBAR_ALWAYS_VISIBLE: false,
+
+    /**
+     * DEPRECATED!
+     * This config was moved to config.js as `toolbarButtons`.
+     */
+    // TOOLBAR_BUTTONS: [],
 
     TOOLBAR_TIMEOUT: 4000,
 
@@ -212,7 +233,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    VIDEO_QUALITY_LABEL_DISABLED: true,
+     VIDEO_QUALITY_LABEL_DISABLED: true,
 
     /**
      * How many columns the tile view can expand to. The respected range is

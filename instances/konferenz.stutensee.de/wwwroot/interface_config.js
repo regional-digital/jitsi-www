@@ -8,7 +8,7 @@
  * config.js, and no new options should be added here.
  */
 
- var interfaceConfig = {
+var interfaceConfig = {
     APP_NAME: 'Milchl@dle 4.0',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
@@ -208,13 +208,7 @@
      * DEPRECATED!
      * This config was moved to config.js as `toolbarButtons`.
      */
-    // TOOLBAR_BUTTONS: [
-    //     'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
-    //     'fodeviceselection', 'hangup', 'profile', 'chat', 'recording',
-    //     'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
-    //     'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
-    //     'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
-    // ],
+    // TOOLBAR_BUTTONS: [],
 
     TOOLBAR_TIMEOUT: 4000,
 
@@ -239,7 +233,7 @@
      *
      * @type {boolean}
      */
-    VIDEO_QUALITY_LABEL_DISABLED: true,
+     VIDEO_QUALITY_LABEL_DISABLED: true,
 
     /**
      * How many columns the tile view can expand to. The respected range is

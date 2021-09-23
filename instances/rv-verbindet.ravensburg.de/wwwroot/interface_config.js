@@ -8,7 +8,7 @@
  * config.js, and no new options should be added here.
  */
 
- var interfaceConfig = {
+var interfaceConfig = {
     APP_NAME: 'rv-verbindet',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
@@ -91,7 +91,7 @@
      * Whether or not the blurred video background for large video should be
      * displayed on browsers that can support it.
      */
-    DISABLE_VIDEO_BACKGROUND: true,
+     DISABLE_VIDEO_BACKGROUND: true,
 
     DISPLAY_WELCOME_FOOTER: false,
     DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
@@ -154,6 +154,7 @@
      * Specify URL for downloading ios mobile app.
      */
     MOBILE_DOWNLOAD_LINK_IOS: 'https://itunes.apple.com/us/app/jitsi-meet/id1165103905',
+
     NATIVE_APP_NAME: 'rv-verbindet',
 
     // Names of browsers which should show a warning stating the current browser
@@ -207,14 +208,7 @@
      * DEPRECATED!
      * This config was moved to config.js as `toolbarButtons`.
      */
-    TOOLBAR_BUTTONS: [
-        'microphone', 'camera', 'closedcaptions', 'desktop', /*'embedmeeting',*/ 'fullscreen',
-        'fodeviceselection', 'hangup', 'profile', 'chat', /*'recording',*/
-        /*'livestreaming', 'etherpad', */'sharedvideo', 'shareaudio', 'settings', 'raisehand',
-        'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
-        'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
-    ],
-
+    // TOOLBAR_BUTTONS: [],
 
     TOOLBAR_TIMEOUT: 4000,
 
@@ -239,7 +233,7 @@
      *
      * @type {boolean}
      */
-    VIDEO_QUALITY_LABEL_DISABLED: true,
+     VIDEO_QUALITY_LABEL_DISABLED: true,
 
     /**
      * How many columns the tile view can expand to. The respected range is
@@ -292,8 +286,8 @@
 /* eslint-enable no-unused-vars, no-var, max-len */
 
 document.addEventListener('DOMContentLoaded', function(){
-        document.querySelector(".watermark").style.maxWidth = "400px";
-        document.querySelector(".watermark").style.maxHeight = "200px";
-        $("span.header-text-subtitle").after("<br /><br /><span class=\"header-text-subtitle\"><a style=\"color:#006fc1\" href=\"https://www.ravensburg.de/rv/gesellschaft-soziales/rv-verbindet.php\" target=\"_blank\"><b>&rarr; So funktioniert\'s</b></a><br /><br /><i>Konferenzname eingeben und los geht's.</i></span>");
+    document.querySelector(".watermark").style.maxWidth = "400px";
+    document.querySelector(".watermark").style.maxHeight = "200px";
+    $("span.header-text-subtitle").after("<br /><br /><span class=\"header-text-subtitle\"><a style=\"color:#006fc1\" href=\"https://www.ravensburg.de/rv/gesellschaft-soziales/rv-verbindet.php\" target=\"_blank\"><b>&rarr; So funktioniert\'s</b></a><br /><br /><i>Konferenzname eingeben und los geht's.</i></span>");
 }, false);
 
