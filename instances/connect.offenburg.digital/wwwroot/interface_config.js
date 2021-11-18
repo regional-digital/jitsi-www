@@ -8,7 +8,7 @@
  * config.js, and no new options should be added here.
  */
 
-var interfaceConfig = {
+ var interfaceConfig = {
     APP_NAME: 'Connect',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
@@ -25,31 +25,6 @@ var interfaceConfig = {
     BRAND_WATERMARK_LINK: 'https://www.offenburg.de',
 
     CLOSE_PAGE_GUEST_HINT: false, // A html text to be shown to guests on the close page, false disables it
-    /**
-     * Whether the connection indicator icon should hide itself based on
-     * connection strength. If true, the connection indicator will remain
-     * displayed while the participant has a weak connection and will hide
-     * itself after the CONNECTION_INDICATOR_HIDE_TIMEOUT when the connection is
-     * strong.
-     *
-     * @type {boolean}
-     */
-    CONNECTION_INDICATOR_AUTO_HIDE_ENABLED: true,
-
-    /**
-     * How long the connection indicator should remain displayed before hiding.
-     * Used in conjunction with CONNECTION_INDICATOR_AUTOHIDE_ENABLED.
-     *
-     * @type {number}
-     */
-    CONNECTION_INDICATOR_AUTO_HIDE_TIMEOUT: 5000,
-
-    /**
-     * If true, hides the connection indicators completely.
-     *
-     * @type {boolean}
-     */
-    CONNECTION_INDICATOR_DISABLED: false,
 
     DEFAULT_BACKGROUND: '#f75767',
     DEFAULT_LOCAL_DISPLAY_NAME: 'Ich',
@@ -58,8 +33,6 @@ var interfaceConfig = {
     DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.png',
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
-
-    DISABLE_FOCUS_INDICATOR: false,
 
     /**
      * If true, notifications regarding joining/leaving are no longer displayed.
@@ -91,7 +64,7 @@ var interfaceConfig = {
      * Whether or not the blurred video background for large video should be
      * displayed on browsers that can support it.
      */
-     DISABLE_VIDEO_BACKGROUND: true,
+    DISABLE_VIDEO_BACKGROUND: true,
 
     DISPLAY_WELCOME_FOOTER: false,
     DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
@@ -116,7 +89,6 @@ var interfaceConfig = {
      */
     HIDE_INVITE_MORE_HEADER: false,
 
-    INITIAL_TOOLBAR_TIMEOUT: 20000,
     JITSI_WATERMARK_LINK: 'https://www.offenburg.de',
 
     LANG_DETECTION: false, // Allow i18n to detect the system language
@@ -174,7 +146,7 @@ var interfaceConfig = {
     RECENT_LIST_ENABLED: true,
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
-    SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
+    SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar', 'sounds' ],
 
     /**
      * Specify which sharing features should be displayed. If the value is not set
@@ -185,10 +157,10 @@ var interfaceConfig = {
     SHOW_BRAND_WATERMARK: false,
 
     /**
-    * Decides whether the chrome extension banner should be rendered on the landing page and during the meeting.
-    * If this is set to false, the banner will not be rendered at all. If set to true, the check for extension(s)
-    * being already installed is done before rendering.
-    */
+     * Decides whether the chrome extension banner should be rendered on the landing page and during the meeting.
+     * If this is set to false, the banner will not be rendered at all. If set to true, the check for extension(s)
+     * being already installed is done before rendering.
+     */
     SHOW_CHROME_EXTENSION_BANNER: false,
 
     SHOW_DEEP_LINKING_IMAGE: false,
@@ -202,16 +174,6 @@ var interfaceConfig = {
      */
     SUPPORT_URL: 'https://www.offenburg.de/connect',
 
-    TOOLBAR_ALWAYS_VISIBLE: false,
-
-    /**
-     * DEPRECATED!
-     * This config was moved to config.js as `toolbarButtons`.
-     */
-    // TOOLBAR_BUTTONS: [],
-
-    TOOLBAR_TIMEOUT: 4000,
-
     // Browsers, in addition to those which do not fully support WebRTC, that
     // are not supported and should show the unsupported browser page.
     UNSUPPORTED_BROWSERS: [],
@@ -224,7 +186,8 @@ var interfaceConfig = {
     // Determines how the video would fit the screen. 'both' would fit the whole
     // screen, 'height' would fit the original video height to the height of the
     // screen, 'width' would fit the original video width to the width of the
-    // screen respecting ratio.
+    // screen respecting ratio, 'nocrop' would make the video as large as
+    // possible and preserve aspect ratio without cropping.
     VIDEO_LAYOUT_FIT: 'both',
 
     /**
@@ -233,7 +196,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-     VIDEO_QUALITY_LABEL_DISABLED: true,
+    VIDEO_QUALITY_LABEL_DISABLED: true,
 
     /**
      * How many columns the tile view can expand to. The respected range is
@@ -274,6 +237,28 @@ var interfaceConfig = {
      INDICATOR_FONT_SIZES
      PHONE_NUMBER_REGEX
     */
+
+    // -----------------DEPRECATED CONFIGS BELOW THIS LINE-----------------------------
+
+    // Connection indicators (
+    // CONNECTION_INDICATOR_AUTO_HIDE_ENABLED,
+    // CONNECTION_INDICATOR_AUTO_HIDE_TIMEOUT,
+    // CONNECTION_INDICATOR_DISABLED) got moved to config.js.
+
+    // Please use disableModeratorIndicator from config.js
+    // DISABLE_FOCUS_INDICATOR: false,
+
+    // Moved to config.js as `toolbarConfig.initialTimeout`.
+    // INITIAL_TOOLBAR_TIMEOUT: 20000,
+
+    // Moved to config.js as `toolbarConfig.alwaysVisible`.
+    // TOOLBAR_ALWAYS_VISIBLE: false,
+
+    // This config was moved to config.js as `toolbarButtons`.
+    // TOOLBAR_BUTTONS: [],
+
+    // Moved to config.js as `toolbarConfig.timeout`.
+    // TOOLBAR_TIMEOUT: 4000,
 
     // Allow all above example options to include a trailing comma and
     // prevent fear when commenting out the last value.
