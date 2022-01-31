@@ -149,7 +149,7 @@
         "yesterday": "Gestern"
     },
     "deepLinking": {
-        "appNotInstalled": "Sie benötigen die „{{app}}“-App, um der Konferenz auf dem Smartphone beizutreten.",
+        "appNotInstalled": "Sie können die „{{app}}“-App installieren, um der Konferenz auf dem Smartphone beizutreten oder Sie wählen unten 'Im Web öffnen' um ohne App-Installation fortzufahren.",
         "description": "Nichts passiert? Wir haben versucht, die Konferenz in {{app}} zu öffnen. Versuchen Sie es erneut oder treten Sie der Konferenz in {{app}} im Web bei.",
         "descriptionWithoutWeb": "Ist nichts passiert? Wir haben versucht, Ihre Besprechung in der „{{app}}“-Desktop-App zu starten.",
         "downloadApp": "App herunterladen",
@@ -161,7 +161,7 @@
         "tryAgainButton": "Erneut mit der nativen Applikation versuchen"
     },
     "defaultLink": "Bsp.: {{url}}",
-    "defaultNickname": "Z. B. Jane Pink",
+    "defaultNickname": "Z.B. Jane Pink",
     "deviceError": {
         "cameraError": "Fehler beim Zugriff auf die Kamera",
         "cameraPermission": "Fehler beim Bezug der Kamera-Zugriffsberechtigungen",
@@ -324,7 +324,7 @@
         "shareMediaWarningGenericH2": "Wenn Sie Ihren Bildschirm und Audio teilen wollen",
         "shareVideoLinkError": "Bitte einen gültigen YouTube-Link angeben.",
         "shareVideoTitle": "Video teilen",
-        "shareYourScreen": "Bildschirmfreigabe ein-/ausschalten",
+        "shareYourScreen": "Bildschirm freigeben",
         "shareYourScreenDisabled": "Bildschirmfreigabe deaktiviert.",
         "startLiveStreaming": "Livestream starten",
         "startRecording": "Aufnahme starten",
@@ -1078,7 +1078,7 @@
             "join": "Zum Teilnehmen tippen",
             "roomname": "Konferenzname eingeben"
         },
-        "appDescription": "Auf geht's! Starten Sie eine Videokonferenz mit Ihrem Team oder besser noch: Laden Sie alle ein, die Sie kennen. {{app}} ist eine vollständig verschlüsselte und 100 % quelloffene Videokonferenzlösung, die Sie immer und überall kostenlos verwenden können – ohne Registrierung.",
+        "appDescription": "Auf geht's! Starten Sie eine Videokonferenz mit Ihrer Familie, Verein, Sprach- oder Musikschulkurs. Oder besser noch: Laden Sie alle ein, die Sie kennen. {{app}} ist eine vollständig verschlüsselte und 100 % quelloffene Videokonferenzlösung der Stadtverwaltung Bruchsal, die Sie immer und überall kostenlos verwenden können – ohne Registrierung.",
         "audioVideoSwitch": {
             "audio": "Audio",
             "video": "Video"
@@ -1086,12 +1086,12 @@
         "calendar": "Kalender",
         "connectCalendarButton": "Kalender verbinden",
         "connectCalendarText": "Verbinden Sie Ihren Kalender, um all Ihre Meetings in {{app}} anzuzeigen. Fügen Sie zudem {{provider}}-Meetings in Ihren Kalender ein und starten Sie sie mit nur einem Klick.",
-        "enterRoomTitle": "Neues Meeting starten",
+        "enterRoomTitle": "Meeting-Name eingeben und...",
         "getHelp": "Hilfe",
         "go": "Los",
         "goSmall": "Los",
-        "headerTitle": "Jitsi Meet",
-        "headerSubtitle": "Sichere und hochqualitative Meetings",
+        "headerTitle": "Brusl babbld",
+        "headerSubtitle": "Die Videokonferenzplattform der Stadtverwaltung Bruchsal",
         "info": "Einwahlinformationen",
         "join": "ERSTELLEN / BEITRETEN",
         "jitsiOnMobile": "Jitsi unterwegs – einfach unsere Apps herunterladen und Meetings von überall starten",
